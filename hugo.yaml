@@ -41,14 +41,12 @@ params:
 
   assets:
     disableHLJS: true
-    # disableFingerprinting: true
 
   label:
     text: "Sophia's Blog"
     icon: ""
     iconHeight: 35
 
-  # profile-mode
   profileMode:
     enabled: false
     title: "Sophia's Blog"
@@ -63,7 +61,6 @@ params:
       - name: About
         url: about
 
-  # home-info mode
   homeInfoParams:
     Title: "你好，我是 Sophia"
     Content: "欢迎来到我的博客。这里记录技术探索、学习笔记和生活感悟。"
@@ -79,8 +76,6 @@ params:
     hiddenInList: true
     hiddenInSingle: true
 
-  # for search
-  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -89,6 +84,22 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
+  # Giscus 评论系统
+  giscus:
+    enable: true
+    repo: "Sophiaa1206/Sophiaa1206.github.io"
+    repoId: "R_kgDOTnVtJw"
+    category: "General"
+    categoryId: "DIC_kwDOTnVtJ84DCPnR"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "zh-CN"
+    loading: "lazy"
 
 menu:
   main:
