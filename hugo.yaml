@@ -93,6 +93,20 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
+  # Giscus 评论系统配置
+  giscus:
+    repo: "Sophiaa1206/sophiaa1206.github.io"
+    repoID: "R_kgDOTnVtJw"
+    category: "Announcements"
+    categoryID: "DIC_kwDOTnVtJ84DCPnQ"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "zh-CN"
+
   # 编辑文章链接（可选）
   editPost:
     URL: "https://github.com/Sophiaa1206/sophiaa1206.github.io/tree/main/content"
