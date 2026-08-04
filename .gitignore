@@ -10,4 +10,5 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-*.swo
+*.swo# GitHub Actions workflow (pushed via API)
+.github/workflows/
