@@ -1,0 +1,140 @@
+baseURL: "https://sophiaa1206.github.io/"
+locale: "zh-cn"
+defaultContentLanguage: "zh"
+title: "Sophia's Blog"
+theme: "PaperMod"
+paginate: 10
+
+enableRobotsTXT: true
+enableEmoji: true
+
+# Hugo 模块输出格式配置
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # 用于搜索功能
+
+# 菜单配置
+menu:
+  main:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "归档"
+      url: "/archives/"
+      weight: 2
+    - name: "搜索"
+      url: "/search/"
+      weight: 3
+    - name: "标签"
+      url: "/tags/"
+      weight: 4
+    - name: "关于"
+      url: "/about/"
+      weight: 5
+
+# PaperMod 主题参数
+params:
+  # 网站基本信息
+  env: "production"
+  defaultTheme: "auto"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # SEO
+  description: "Sophia 的个人博客 - 记录学习、生活与思考"
+  author: "Sophia"
+  keywords: ["Blog", "Hugo", "PaperMod", "Sophia"]
+
+  # 首页 Profile 模式
+  profileMode:
+    enabled: true
+    title: "Hello, I'm Sophia 👋"
+    subtitle: "欢迎来到我的个人博客
+    这里记录我的学习笔记、技术分享与生活随想"
+    imageUrl: "/profile.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Sophia"
+    buttons:
+      - name: "博客文章"
+        url: "/posts/"
+      - name: "关于我"
+        url: "/about/"
+
+  # 社交链接
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/Sophiaa1206"
+    - name: "email"
+      url: "mailto:sophia@example.com"
+
+  # 搜索功能
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  # 编辑文章链接（可选）
+  editPost:
+    URL: "https://github.com/Sophiaa1206/sophiaa1206.github.io/tree/main/content"
+    Text: "提出修改建议"
+    appendFilePath: true
+
+  # 文章页封面图
+  cover:
+    hidden: true # 在列表页隐藏封面
+    hiddenInList: true
+    hiddenInSingle: false
+
+  # 日期格式
+  dateFormat: "2006-01-02"
+
+# Markdown 渲染
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # 使用 PaperMod 自带的 syntax.css
+    style: "monokai"
+    lineNos: false
+    codeFences: true
+    guessSyntax: true
+    tabWidth: 2
+
+# 隐藏 Hugo 生成器 meta 标签
+privacy:
+  googleAnalytics:
+    disable: true
+
+# 网站地图
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+# 分类法
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
