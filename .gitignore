@@ -13,3 +13,6 @@ Thumbs.db
 
 # Node
 node_modules/
+
+# Workflow file - add manually via GitHub UI or re-authenticate gh CLI with workflow scope
+.github/workflows/
