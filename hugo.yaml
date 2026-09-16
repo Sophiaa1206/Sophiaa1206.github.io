@@ -3,8 +3,8 @@ locale: "zh-cn"
 defaultContentLanguage: "zh"
 title: "Sophia's Blog"
 theme: "PaperMod"
-[pagination]
-pagerSize = 10
+pagination:
+  pagerSize: 10
 
 enableRobotsTXT: true
 enableEmoji: true
@@ -53,8 +53,6 @@ params:
   comments: true
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
 
   # SEO
   description: "Sophia 的个人博客 - 记录学习、生活与思考"
